@@ -6,6 +6,7 @@ target 'iBeaconTest' do
   use_frameworks!
 
   # Pods for iBeaconTest
+  pod 'EstimoteSDK'
 
   target 'iBeaconTestTests' do
     inherit! :search_paths
