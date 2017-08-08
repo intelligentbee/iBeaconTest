@@ -11,12 +11,14 @@
 		69484404D153F52FCCB4F258 /* Pods_iBeaconTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54F671B350754F169338789 /* Pods_iBeaconTestTests.framework */; };
 		69E62255FC48BE6C15F74B4A /* Pods_iBeaconTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFB44C84F9141FC671DE153 /* Pods_iBeaconTest.framework */; };
 		B9021A1B1F3992A100C6B7AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9021A1A1F3992A100C6B7AB /* AppDelegate.swift */; };
-		B9021A1D1F3992A100C6B7AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9021A1C1F3992A100C6B7AB /* ViewController.swift */; };
 		B9021A201F3992A100C6B7AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9021A1E1F3992A100C6B7AB /* Main.storyboard */; };
 		B9021A221F3992A100C6B7AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9021A211F3992A100C6B7AB /* Assets.xcassets */; };
 		B9021A251F3992A100C6B7AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9021A231F3992A100C6B7AB /* LaunchScreen.storyboard */; };
 		B9021A301F3992A100C6B7AB /* iBeaconTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9021A2F1F3992A100C6B7AB /* iBeaconTestTests.swift */; };
 		B9021A3B1F3992A100C6B7AB /* iBeaconTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9021A3A1F3992A100C6B7AB /* iBeaconTestUITests.swift */; };
+		B99E076E1F39B5E400F2D52A /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99E076D1F39B5E400F2D52A /* BeaconManager.swift */; };
+		B99E07711F3A0EFE00F2D52A /* UIBeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99E076F1F3A0EFE00F2D52A /* UIBeaconViewController.swift */; };
+		B99E07721F3A0EFE00F2D52A /* UIBeaconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B99E07701F3A0EFE00F2D52A /* UIBeaconViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,6 @@
 		A39E2C0841D38D2087E4EB14 /* Pods_iBeaconTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iBeaconTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9021A171F3992A100C6B7AB /* iBeaconTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9021A1A1F3992A100C6B7AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B9021A1C1F3992A100C6B7AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B9021A1F1F3992A100C6B7AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9021A211F3992A100C6B7AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9021A241F3992A100C6B7AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +58,9 @@
 		B9021A3A1F3992A100C6B7AB /* iBeaconTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconTestUITests.swift; sourceTree = "<group>"; };
 		B9021A3C1F3992A100C6B7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B99E07421F39AAAE00F2D52A /* iBeaconTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBeaconTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		B99E076D1F39B5E400F2D52A /* BeaconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		B99E076F1F3A0EFE00F2D52A /* UIBeaconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBeaconViewController.swift; sourceTree = "<group>"; };
+		B99E07701F3A0EFE00F2D52A /* UIBeaconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIBeaconViewController.xib; sourceTree = "<group>"; };
 		E2C6E0AE65932799147EE096 /* Pods-iBeaconTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBeaconTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-iBeaconTest/Pods-iBeaconTest.release.xcconfig"; sourceTree = "<group>"; };
 		F54F671B350754F169338789 /* Pods_iBeaconTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iBeaconTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB2DC8A358FB3C3FFEF933C /* Pods-iBeaconTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBeaconTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iBeaconTestUITests/Pods-iBeaconTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 		B9021A191F3992A100C6B7AB /* iBeaconTest */ = {
 			isa = PBXGroup;
 			children = (
+				B99E076C1F39B5D600F2D52A /* Managers */,
 				B99E07461F39AB0000F2D52A /* ViewControllers */,
 				B99E07451F39AAEE00F2D52A /* Configs */,
 			);
@@ -166,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				B9021A1A1F3992A100C6B7AB /* AppDelegate.swift */,
-				B9021A1C1F3992A100C6B7AB /* ViewController.swift */,
 				B9021A1E1F3992A100C6B7AB /* Main.storyboard */,
 				B9021A211F3992A100C6B7AB /* Assets.xcassets */,
 				B9021A231F3992A100C6B7AB /* LaunchScreen.storyboard */,
@@ -179,8 +183,18 @@
 		B99E07461F39AB0000F2D52A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B99E076F1F3A0EFE00F2D52A /* UIBeaconViewController.swift */,
+				B99E07701F3A0EFE00F2D52A /* UIBeaconViewController.xib */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B99E076C1F39B5D600F2D52A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B99E076D1F39B5E400F2D52A /* BeaconManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B99E07721F3A0EFE00F2D52A /* UIBeaconViewController.xib in Resources */,
 				B9021A251F3992A100C6B7AB /* LaunchScreen.storyboard in Resources */,
 				B9021A221F3992A100C6B7AB /* Assets.xcassets in Resources */,
 				B9021A201F3992A100C6B7AB /* Main.storyboard in Resources */,
@@ -475,7 +490,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9021A1D1F3992A100C6B7AB /* ViewController.swift in Sources */,
+				B99E07711F3A0EFE00F2D52A /* UIBeaconViewController.swift in Sources */,
+				B99E076E1F39B5E400F2D52A /* BeaconManager.swift in Sources */,
 				B9021A1B1F3992A100C6B7AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
