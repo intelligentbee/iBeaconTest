@@ -15,8 +15,6 @@ class UIBeaconViewController: UIViewController, ESTBeaconManagerDelegate {
     let region = CLBeaconRegion(
         proximityUUID: UUID(uuidString: BeaconsUUID)!,
         major: BeaconsMajorID, identifier: RegionIdentifier)
-    //    let region = CLBeaconRegion(
-    //        proximityUUID: UUID(uuidString: BeaconsUUID)!,identifier: RegionIdentifier)
     
     let colors: [MyBeacon : UIColor] =
         [MyBeacon.pink: UIColor(red: 240/255.0, green: 183/255.0, blue: 183/255.0, alpha: 1),
@@ -32,12 +30,30 @@ class UIBeaconViewController: UIViewController, ESTBeaconManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        resetBackgroundColor()
+        setupBeaconManager()
+    }
+    
+    // MARK: - UI Utilities
+    
+    func resetBackgroundColor() {
         self.view.backgroundColor = UIColor.green
+    }
+    
+    // MARK: - ESTBeaconManagerDelegate - Utilities
+    
+    func setupBeaconManager() {
         BeaconManager.main.delegate = self
         
         if (BeaconManager.main.isAuthorizedForMonitoring() && BeaconManager.main.isAuthorizedForRanging()) == false {
             BeaconManager.main.requestAlwaysAuthorization()
         }
+    }
+    
+    func startMonitoring() {
+        
+        BeaconManager.main.startMonitoring(for: region)
+        BeaconManager.main.startRangingBeacons(in: region)
     }
     
     // MARK: - ESTBeaconManagerDelegate
@@ -78,20 +94,12 @@ class UIBeaconViewController: UIViewController, ESTBeaconManagerDelegate {
             self.view.backgroundColor = beaconColor
         }
         else {
-            self.view.backgroundColor = UIColor.green
+            resetBackgroundColor()
         }
     }
     
     func beaconManager(_ manager: Any, didFailWithError error: Error) {
         label.text = "DID FAIL WITH ERROR" + error.localizedDescription
-    }
-    
-    // MARK: - ESTBeaconManagerDelegate - Utilities
-    
-    func startMonitoring() {
-        
-        BeaconManager.main.startMonitoring(for: region)
-        BeaconManager.main.startRangingBeacons(in: region)
     }
 }
 
